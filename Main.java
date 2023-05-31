@@ -41,7 +41,7 @@ public class Main {
     Hospede h2 = new Hospede(nome, cpf, dataNascimento, idade, endereco, telefone);
         
         System.out.println(h2);
-        h2.ehCrianca();
+        h2.ehCrianca(); //not working >:(
 
     }
 
