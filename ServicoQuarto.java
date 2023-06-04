@@ -13,6 +13,7 @@ public class ServicoQuarto {
 	public void setTipoServico(int tipoServico) {
 		this.tipoServico = tipoServico;
 	}
+	Quarto quarto = new Quarto();
 	
 	String resultado;
 	public String servico(int tipoServico) {
@@ -34,10 +35,10 @@ public class ServicoQuarto {
 		} 
 	}
 	public String servEscolhido() {
-		return "O usuário escolheu " + servico(tipoServico);
+		return "O usuário escolheu " + servico(tipoServico) + "\n" + quarto.escolhaQuarto();
 	}
 	
 	public String exibirServico() {
-		return "O usuário escolheu " + servico(tipoServico);
+		return "O usuário escolheu " + servico(tipoServico) + "\n" + quarto.escolhaQuarto();
 	}
 }

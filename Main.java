@@ -48,7 +48,7 @@ public class Main {
         
         
         h2.exibirDadosHospede(); //not working >:(
-        System.out.println(h2);
+        //System.out.println(h2);
         
     	FileOutputStream resultado1 = new FileOutputStream("./outputs/resultado1.txt");
     	resultado1.write("Dados do cliente: \n".getBytes());
@@ -62,6 +62,9 @@ public class Main {
 		int num = sc.nextInt();
 		ServicoQuarto teste = new ServicoQuarto(num);
 		System.out.println(teste.exibirServico());
+		int escQuarto = sc.nextInt();
+		Quarto quarto = new Quarto();
+		System.out.println(quarto.quartoEscolhido(escQuarto));
 		sc.close();
 		
         } catch(IOException e) {
