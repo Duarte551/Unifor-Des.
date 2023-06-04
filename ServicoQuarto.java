@@ -18,7 +18,7 @@ public class ServicoQuarto {
 	String resultado;
 	public String servico(int tipoServico) {
 		if (tipoServico == 1) {
-		 resultado = "selecionar um quarto";
+		 resultado = "selecionar um quarto + \n" + quarto.escolhaQuarto();
 		 return resultado;
 		}else if(tipoServico == 2) {
 			resultado = "ir até o restaurante";
@@ -35,10 +35,10 @@ public class ServicoQuarto {
 		} 
 	}
 	public String servEscolhido() {
-		return "O usuário escolheu " + servico(tipoServico) + "\n" + quarto.escolhaQuarto();
+		return "O usuário escolheu " + servico(tipoServico);
 	}
 	
 	public String exibirServico() {
-		return "O usuário escolheu " + servico(tipoServico) + "\n" + quarto.escolhaQuarto();
+		return "O usuário escolheu " + servico(tipoServico);
 	}
 }
