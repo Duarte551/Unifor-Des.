@@ -17,6 +17,6 @@ public class Atendente{
    }
    
    public String informarServico(){
-    System.out.println("Temos em nosso resort quartos comuns ou presidenciais. Para o lazer, disponibilizamos um parque aquático.")
+    System.out.println("Temos em nosso resort quartos comuns ou presidenciais. Para o lazer, disponibilizamos um parque aquático e um passeio de bugre na praia.")
    }
 }
