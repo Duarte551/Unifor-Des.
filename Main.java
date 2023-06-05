@@ -5,7 +5,13 @@ import java.time.Period;
 
 public class Main {
     public static void main(String[] args) {
-
+    // Serviço de Atendimento
+        
+    String nomeAtendente = "Livia";
+	AtendenteResort nom = new AtendenteResort(nomeAtendente);
+	System.out.println(nom.receberCliente());
+        
+        
     // Cadastrar Hóspedes
 
     Scanner sc = new Scanner(System.in);
