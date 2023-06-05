@@ -12,11 +12,11 @@ public class Atendente{
     this.nome=nome;
  }
 
-   public static void receberCliente(){
+   public String receberCliente(){
         System.out.println("bom dia.Seja bem-vindo ao nosso resort.Em que posso ajudá-lo?");
    }
    
-   public static void informarServico(){
+   public String informarServico(){
     System.out.println("Temos em nosso resort quartos comuns ou presidenciais. Para o lazer, disponibilizamos um parque aquático.")
    }
 }
