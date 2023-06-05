@@ -8,8 +8,8 @@ public class Main {
     // Serviço de Atendimento
         
     String nomeAtendente = "Livia";
-	AtendenteResort nom = new AtendenteResort(nomeAtendente);
-	System.out.println(nom.receberCliente());
+	AtendenteResort nome = new AtendenteResort(nomeAtendente);
+	System.out.println(nome.receberCliente());
         
         
     // Cadastrar Hóspedes
