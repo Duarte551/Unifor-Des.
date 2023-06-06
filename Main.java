@@ -1,23 +1,27 @@
+package Lunna;
+
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.Period;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 
 public class Main {
     public static void main(String[] args) {
-    // Serviço de Atendimento
-        
-    String nomeAtendente = "Livia";
-	AtendenteResort nome = new AtendenteResort(nomeAtendente);
-	System.out.println(nome.receberCliente());
-        
-        
-    // Cadastrar Hóspedes
 
-    Scanner sc = new Scanner(System.in);
-
+    //Cadastrar Hóspedes
+  try {
+    
+	String nomeAtendente = "Livia";
+	AtendenteResort nom = new AtendenteResort(nomeAtendente);
+	System.out.println(nom.receberCliente());
+		
+	Scanner sc = new Scanner(System.in);
+	
     System.out.println("Digite o nome do hóspede.");
-    String nomeHospede = sc.nextLine();
+    String nome = sc.nextLine();
     System.out.println("Digite o CPF do hóspede.");
     String cpf = sc.nextLine();
     System.out.println("Digite a data de nascimento do hóspede, DD/MM/AAAA.");
@@ -28,9 +32,9 @@ public class Main {
     String telefone = sc.nextLine();
     System.out.println("Obrigada :)");
     
-    sc.close();
+    //sc.close();
 
-    // Pra pegar a idade
+    // Pra pegar a idade idk
 
     String arrayAniversario[] = dataNascimento.split("/");
     int dia = Integer.parseInt(arrayAniversario[0]);
@@ -44,16 +48,35 @@ public class Main {
        //System.out.println("Nome: " + nome + "\n CPF: " + cpf + "\n Data de Nascimento: " + dataNascimento + "\n Idade: " + idade + "\n Endereço: " + endereco + "\n Telefone: " + telefone);
 
 
-    Hospede h2 = new Hospede(nomeHospede, cpf, dataNascimento, idade, endereco, telefone);
+    hospede h2 = new hospede(nome, cpf, dataNascimento, idade, endereco, telefone);
+        
+        
+        h2.exibirDadosHospede(); //not working >:(
+        //System.out.println(h2);
+        
+    	FileOutputStream resultado1 = new FileOutputStream("./outputs/resultado1.txt");
+    	resultado1.write("Dados do cliente: \n".getBytes());
+		resultado1.write(h2.toString().getBytes());
+		resultado1.close();
+		
+		//Scanner servico = new Scanner(System.in);
+		
+		System.out.println("Escolha o que você deseja fazer no momento:");
+		System.out.println("[1] - Selecionar um quarto  \n[2] - Ir até as áreas de lazer \n[3] - Ver a conta");
+		int num = sc.nextInt();
+		ServicoQuarto teste = new ServicoQuarto(num);
+		System.out.println(teste.exibirServico());
+		int escQuarto = sc.nextInt();
+		Quarto quarto = new Quarto();
+		System.out.println(quarto.quartoEscolhido(escQuarto));
+		System.out.println("Escolha a quantidade de dias que você deseja passar");
+		int qtdias = sc.nextInt();		
+		System.out.println(quarto.escolhaDias(qtdias));
+		sc.close();
+		
+        } catch(IOException e) {
+		System.out.println(e);
+       }
+   } 
 
-    h2.exibirDadosHospede();
- 
 }
-
-
-}
-
-
-
-
-
