@@ -38,7 +38,11 @@ public class ServicoQuarto {
 		return "O usuário escolheu " + servico(tipoServico);
 	}
 	
-	public String exibirServico() {
-		return "O usuário escolheu " + servico(tipoServico);
+	public double calcularContaHospedagem(double valorQuarto int qtDias){
+		contaValorQuarto= qtDias * valorQuarto;
+		return contaValorQuarto;
+	}
+	public String dizerValorConta(){
+		system.out.print.ln("o valor total da sua hospedagem é:" + calcularContaHospedagem());
 	}
 }
