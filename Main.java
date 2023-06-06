@@ -17,7 +17,7 @@ public class Main {
     Scanner sc = new Scanner(System.in);
 
     System.out.println("Digite o nome do hóspede.");
-    String nome = sc.nextLine();
+    String nomeHospede = sc.nextLine();
     System.out.println("Digite o CPF do hóspede.");
     String cpf = sc.nextLine();
     System.out.println("Digite a data de nascimento do hóspede, DD/MM/AAAA.");
@@ -44,16 +44,14 @@ public class Main {
        //System.out.println("Nome: " + nome + "\n CPF: " + cpf + "\n Data de Nascimento: " + dataNascimento + "\n Idade: " + idade + "\n Endereço: " + endereco + "\n Telefone: " + telefone);
 
 
-    Hospede h2 = new Hospede(nome, cpf, dataNascimento, idade, endereco, telefone);
-        
+    Hospede h2 = new Hospede(nomeHospede, cpf, dataNascimento, idade, endereco, telefone);
+
     h2.exibirDadosHospede();
-    //System.out.println(h2);
-
-    }
-
+ 
 }
 
 
+}
 
 
 

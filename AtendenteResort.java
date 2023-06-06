@@ -1,7 +1,7 @@
-public class Atendente{
+public class AtendenteResort{
    private String nome;
 
-   public Atendente(String nome){
+   public AtendenteResort(String nome){
      this.nome= nome;
    }
 
@@ -13,10 +13,10 @@ public class Atendente{
  }
 
    public String receberCliente(){
-        System.out.println("bom dia.Seja bem-vindo ao nosso resort.Em que posso ajudá-lo?");
+        return "Bom dia. Seja bem-vindo ao nosso resort. Em que posso ajudá-lo?";
    }
    
    public String informarServico(){
-    System.out.println("Temos em nosso resort quartos comuns ou presidenciais. Para o lazer, disponibilizamos um parque aquático e um passeio de bugre na praia.")
+         return "Temos em nosso resort quartos comuns, executivos ou presidenciais. Para o lazer, disponibilizamos um parque aquático e um passeio de bugre na praia.";
    }
 }

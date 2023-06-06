@@ -18,19 +18,19 @@ public class ServicoQuarto {
 	String resultado;
 	public String servico(int tipoServico) {
 		if (tipoServico == 1) {
-		 resultado = "selecionar um quarto + \n" + quarto.escolhaQuarto();
+		 resultado = "Selecionar um quarto + \n" + quarto.escolhaQuarto();
 		 return resultado;
 		}else if(tipoServico == 2) {
-			resultado = "ir até o restaurante";
+			resultado = "Ir até o restaurante";
 			return resultado;
 		}else if(tipoServico == 3){
-			resultado = "visitar as áreas de lazer";
+			resultado = "Visitar as áreas de lazer";
 			return resultado;
 		}else if(tipoServico == 4) {
-			resultado = "ver o valor gasto";
+			resultado = "Ver o valor gasto";
 			return resultado;
 		}else {
-			resultado = "um número inválido";
+			resultado = "Número inválido";
 			return resultado;
 		} 
 	}

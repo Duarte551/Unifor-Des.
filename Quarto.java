@@ -34,20 +34,25 @@ public class Quarto {
 	public String quartoEscolhido(int tipoQuarto) {
 		if(tipoQuarto == 1) {
 			double valorQuarto = 700.00;
-			return "Excelente escolha, a suíte presidencial conta com cinco quartos, uma sala de estar impressionante e uma decoração personalizada, \n é nossa suíte mais cara, mas vale muito a pena";
+			return "Excelente escolha! A suíte presidencial conta com cinco quartos, uma sala de estar impressionante e uma decoração personalizada. \n É a nossa suíte mais cara, mas vale muito a pena.";
 		}else if(tipoQuarto == 2) {
 			double valorQuarto = 500.00;
-			return "Uma escolha muito boa de quarto, a suíte executiva conta com uma área de estar separada conectada a três quartos";
+			return "Uma escolha muito boa de quarto, a suíte executiva conta com uma área de estar separada conectada a três quartos.";
 		}else if(tipoQuarto == 3) {
 			double valorQuarto = 400.00;
-			return "Um quarto grande e sofisticado, com uma ótima vista para o mar";
+			return "Um quarto grande e sofisticado, com uma ótima vista para o mar.";
 		}else if(tipoQuarto == 4) {
 			double valorQuarto = 200.00;
-			return "Um quarto ótimo para um casal ou viajante individual, conta com uma cama de casal e uma sala de estar";
+			return "Um quarto ótimo para um casal ou viajante individual, conta com uma cama de casal e uma sala de estar.";
 		}else {
-			return "Por favor, escolha um quarto";
+			return "Por favor, escolha um quarto.";
 		}
 	}
 	
-}
+	public int valorCrianca(String ehCrianca) {
+					if (ehCrianca == "É criança.")
+			valorQuarto = valorQuarto * 0.5;
+		 };
+	}
+
 
