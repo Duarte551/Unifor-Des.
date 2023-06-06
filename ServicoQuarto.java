@@ -38,7 +38,7 @@ public class ServicoQuarto {
 		return "O usuário escolheu " + servico(tipoServico);
 	}
 	
-	public double calcularContaHospedagem(double valorQuarto int qtDias){
+	public double calcularContaHospedagem(double valorQuarto, int qtDias){
 		contaValorQuarto= qtDias * valorQuarto;
 		return contaValorQuarto;
 	}
