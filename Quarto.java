@@ -53,6 +53,11 @@ public class Quarto {
 	public String escolhaDias(int qtDias){
 		return "Você passará " + qtDias + " dias em nosso hotel";
 	}
+	public String calcularContaHospedagem(double valorQuarto, int qtDias){
+		double contaValorQuarto = qtDias * valorQuarto;
+		return "O valor total de sua hospedagem é de: " + contaValorQuarto;
+	}
+}
 	
 }
 
