@@ -1,4 +1,3 @@
-//package Lunna;
 
 public class Quarto {
 	private int tipoQuarto;
@@ -36,16 +35,16 @@ public class Quarto {
 	public String quartoEscolhido(int tipoQuarto) {
 		if(tipoQuarto == 1) {
 			double valorQuarto = 700.00;
-			return "Excelente escolha! A suíte presidencial conta com cinco quartos, uma sala de estar impressionante e uma decoração personalizada. \n É a nossa suíte mais cara, mas vale muito a pena.";
+			return "Excelente escolha! A suíte presidencial conta com cinco quartos, uma sala de estar impressionante e uma decoração personalizada. \n É a nossa suíte mais cara, mas vale muito a pena. \n" + servicoLazer();
 		}else if(tipoQuarto == 2) {
 			double valorQuarto = 500.00;
-			return "Uma escolha muito boa de quarto, a suíte executiva conta com uma área de estar separada conectada a três quartos.";
+			return "Uma escolha muito boa de quarto, a suíte executiva conta com uma área de estar separada conectada a três quartos. \n" + servicoLazer();
 		}else if(tipoQuarto == 3) {
 			double valorQuarto = 400.00;
-			return "Um quarto grande e sofisticado, com uma ótima vista para o mar.";
+			return "Um quarto grande e sofisticado, com uma ótima vista para o mar. \n" + servicoLazer();
 		}else if(tipoQuarto == 4) {
 			double valorQuarto = 200.00;
-			return "Um quarto ótimo para um casal ou viajante individual, conta com uma cama de casal e uma sala de estar.";
+			return "Um quarto ótimo para um casal ou viajante individual, conta com uma cama de casal e uma sala de estar. \n" + servicoLazer();
 		}else {
 			return "Por favor, escolha um quarto.";
 		}
@@ -63,8 +62,13 @@ public class Quarto {
 		if (ehCrianca == "É criança.")
 		contaValorQuarto = contaValorQuarto * 0.5;
 		return "o valor da hospedagem da criança é " + contaValorQuarto;
-	};
 	}
+	
+	Lazer teste = new Lazer();
+	public String servicoLazer() {
+		return "Agora, por favor, " + teste.escolhaLazer();
+	}
+}
 	
 
 
