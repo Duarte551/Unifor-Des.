@@ -68,7 +68,7 @@ public class Main {
 		System.out.println("[1] - Selecionar um quarto  \n[2] - Ir até as áreas de lazer \n[3] - Ver a conta");
 		int num = sc.nextInt();
 		ServicoQuarto teste = new ServicoQuarto(num);
-		//System.out.println(teste.exibirServico());
+		System.out.println(teste.servEscolhido());
 		int escQuarto = sc.nextInt();
 		Quarto quarto = new Quarto();
 		System.out.println(quarto.quartoEscolhido(escQuarto));
